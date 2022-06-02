@@ -4,7 +4,7 @@ import { ref } from "vue";
 withDefaults(defineProps<{
     checkedText?: string;
     uncheckedText?: string;
-    size?: string;
+    size?: "normal" | "large" | "small";
 }>(), {
     checkedText: "",
     uncheckedText: "",
