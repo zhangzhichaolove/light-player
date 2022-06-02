@@ -1,7 +1,22 @@
 {
   "name": "light-player",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/light-player.es.ts",
+  "main": "./dist/light-player.umd.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/light-player.es.ts",
+      "require": "./dist/light-player.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
