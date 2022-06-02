@@ -16,6 +16,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/components/index.ts'),
       name: 'light-player',
+      // fileName: (format) => `build.${format}.ts`
       fileName: (format) => `light-player.${format}.ts`
     },
     rollupOptions: {
