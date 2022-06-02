@@ -1,12 +1,11 @@
 <script setup lang='ts'>
 import { ref } from "vue";
 
-interface Prop {
+withDefaults(defineProps<{
     checkedText?: string;
     uncheckedText?: string;
     size?: string;
-}
-const props = withDefaults(defineProps<Prop>(), {
+}>(), {
     checkedText: "",
     uncheckedText: "",
     size: "normal",
