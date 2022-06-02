@@ -20,8 +20,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "pub": "npm run build && cp pub-pacckage.json dist/package.json && cd dist && npm publish",
-    "publish": "npm run build && npm publish",
+    "pub": "npm run build && cp pub-package.json dist/package.json && cd dist && npm publish",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
