@@ -1,0 +1,34 @@
+{
+    "name": "light-player",
+    "version": "0.0.1",
+    "description": "一款轻量web播放器,基于vue3.2的组件库。",
+    "main": "light-player.es.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zhangzhichaolove/light-player"
+    },
+    "author": {
+        "name": "peakchao",
+        "email": "admin@peakchao.com",
+        "url": "peakchao.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zhangzhichaolove/light-player/issues"
+    },
+    "homepage": "https://github.com/zhangzhichaolove/light-player#readme",
+    "keywords": [
+        "vue 3",
+        "vue3",
+        "vue",
+        "vue3-video-play",
+        "hlsjs",
+        "hls.js",
+        "vue video player",
+        "vue3 video player",
+        "video player video",
+        "video player",
+        "vue player",
+        "vue video"
+    ]
+}

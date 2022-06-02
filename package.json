@@ -3,7 +3,8 @@
   "private": false,
   "version": "0.0.1",
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "module": "./dist/light-player.es.ts",
   "main": "./dist/light-player.umd.ts",
@@ -21,6 +22,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "pub": "vue-tsc --noEmit && vite build && cp pub-pacckage.json dist/package.json && cd dist && npm publish",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
