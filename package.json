@@ -3,11 +3,9 @@
   "private": false,
   "version": "0.0.1",
   "files": [
-    "dist",
-    "lib"
+    "dist"
   ],
-  "module": "./dist/light-player.es.ts",
-  "main": "./dist/light-player.umd.ts",
+  "sideEffects": false,
   "exports": {
     ".": {
       "import": "./dist/light-player.es.ts",
@@ -22,7 +20,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "pub": "vue-tsc --noEmit && vite build && cp pub-pacckage.json dist/package.json && cd dist && npm publish",
+    "pub": "npm run build && cp pub-pacckage.json dist/package.json && cd dist && npm publish",
+    "publish": "npm run build && npm publish",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
@@ -35,6 +34,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vite-plugin-dts": "^1.2.0",
     "vitepress": "^1.0.0-alpha.1",
     "vue-tsc": "^0.34.7"
   }

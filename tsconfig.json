@@ -6,7 +6,7 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
-    "sourceMap": true,
+    // "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -15,11 +15,21 @@
     "skipLibCheck": true,
     "allowJs": true,
     "experimentalDecorators": true,
+    // tsc生成.d.ts类型声明文件
+    "declaration": true,
+    "sourceMap": false, // 是否生成map文件
+    "removeComments": false, // 是否移除注释
+    "outDir": "noSave", // 输出目录
+    "declarationDir": "dist/lib", // 类型声明文件的输出目录
     "types": [
       "vite/client",
     ]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 排除编译入口文件 , "src/env.d.ts"
+  "exclude": [
+    "src/main.ts", "src/App.vue", "src/env.d.ts"
+  ],
   "references": [{
     "path": "./tsconfig.node.json"
   }]

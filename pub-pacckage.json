@@ -1,8 +1,12 @@
 {
-    "name": "light-player",
-    "version": "0.0.1",
+    "name": "light-player-vb",
+    "version": "0.0.17",
     "description": "一款轻量web播放器,基于vue3.2的组件库。",
     "main": "light-player.es.ts",
+    "module": "light-player.umd.ts",
+    "types": "index.d.ts",
+    "typings": "index.d.ts",
+    "files": ["*", "types/*.d.ts", "dist/*.js"],
     "repository": {
         "type": "git",
         "url": "https://github.com/zhangzhichaolove/light-player"
@@ -14,19 +18,17 @@
     },
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/zhangzhichaolove/light-player/issues"
+        "url": "https://github.com/zhangzhichaolove/light-player/issues",
+        "email": "admin@peakchao.com"
     },
     "homepage": "https://github.com/zhangzhichaolove/light-player#readme",
     "keywords": [
-        "vue 3",
         "vue3",
         "vue",
-        "vue3-video-play",
-        "hlsjs",
-        "hls.js",
+        "light-play",
+        "vue3-light-play",
         "vue video player",
         "vue3 video player",
-        "video player video",
         "video player",
         "vue player",
         "vue video"
