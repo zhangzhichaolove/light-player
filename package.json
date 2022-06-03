@@ -8,8 +8,8 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "import": "./dist/light-player.es.ts",
-      "require": "./dist/light-player.umd.ts"
+      "import": "./dist/light-player.es.js",
+      "require": "./dist/light-player.umd.js"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",

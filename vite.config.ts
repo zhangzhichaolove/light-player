@@ -18,7 +18,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/components/index.ts'),
       name: 'light-player',
       // fileName: (format) => `build.${format}.ts`
-      fileName: (format) => `light-player.${format}.ts`
+      fileName: (format) => `light-player.${format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
