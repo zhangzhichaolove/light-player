@@ -24,11 +24,14 @@ const bClass = computed(() => {
 
 <style scoped lang='css'>
 @import "@/styles/base/inset.css";
+
 .ds-button {
     @mixin inset-button;
-    padding: 3px 12px;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+    padding: rem(3px 12px);
     border-radius: 5px;
-    border: 1px solid #ff00ff;
+    border: rem(1px solid #ff00ff);
 }
 
 .ds-button-default {

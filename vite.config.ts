@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import Markdown from "vite-plugin-md";
 import dts from 'vite-plugin-dts'
 import postcssMixins from 'postcss-mixins'
+import postcssRem from 'postcss-rem'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,7 +23,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'light-player',
       // fileName: (format) => `build.${format}.ts`
-      fileName: (format) => `light-player.${format}.js`
+      fileName: format => `light-player.${format}.js`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -37,7 +38,7 @@ export default defineConfig({
   },
   css: {
     postcss: {
-      plugins: [postcssMixins]
+      plugins: [postcssMixins, postcssRem]
     }
   },
   server: {

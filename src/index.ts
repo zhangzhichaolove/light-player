@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import "@/styles/code.css";
+import "@/styles/base/code.css";
 import "@/styles/base/inset.css";
 import { Switch, Button } from '@/packages/index'
 
