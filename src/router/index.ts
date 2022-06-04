@@ -16,17 +16,17 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '',
                 name: '快速入门',
-                component: () => import('@/packages/Guide/doc/doc.md')
+                component: () => import('@/packages/guide/doc/doc.md')
             },
             {
                 path: 'button',
                 name: 'Button 按钮',
-                component: () => import('@/packages/Button/doc/doc.md')
+                component: () => import('@/packages/button/doc/doc.md')
             },
             {
                 path: 'switch',
                 name: 'Switch 开关',
-                component: () => import('@/packages/Switch/doc/doc.md')
+                component: () => import('@/packages/switch/doc/doc.md')
             },
         ]
     },

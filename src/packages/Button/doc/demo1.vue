@@ -5,12 +5,12 @@ const click = () => {
 </script>
 
 <template>
-    <ds-button @click="click">
+    <c-button @click="click">
         默认按钮
-    </ds-button>
-    <ds-button type="success" @click="click">
+    </c-button>
+    <c-button type="success" @click="click">
         成功按钮
-    </ds-button>
+    </c-button>
 </template>
 
 <style scoped>

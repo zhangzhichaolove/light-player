@@ -13,7 +13,7 @@ const click = () => {
     emits("click");
 };
 const bClass = computed(() => {
-    return ['ds-button', `ds-button-${props.type}`]
+    return ['c-button', `c-button-${props.type}`]
 })
 </script>
 <template>
@@ -25,7 +25,7 @@ const bClass = computed(() => {
 <style scoped lang='css'>
 @import "@/styles/base/inset.css";
 
-.ds-button {
+.c-button {
     @mixin inset-button;
     margin-left: rem(5px);
     margin-right: rem(5px);
@@ -34,11 +34,11 @@ const bClass = computed(() => {
     border: rem(1px solid #ff00ff);
 }
 
-.ds-button-default {
+.c-button-default {
     background-color: #00ff00;
 }
 
-.ds-button-success {
+.c-button-success {
     background-color: #ff0000;
 }
 </style>

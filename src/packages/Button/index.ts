@@ -1,7 +1,7 @@
 import { App } from 'vue'
 import Button from './index.vue'
 
-Button.name = 'ds-button'
+Button.name = 'c-button'
 
 Button.install = (app: App) => {
     app.component(Button.name, Button)

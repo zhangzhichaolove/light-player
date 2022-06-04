@@ -21,7 +21,7 @@ const switchHandel = () => {
 };
 </script>
 <template>
-    <button class="ds-switch" :class="checked ? 'ds-switch-checked' : ''" @click="switchHandel" :style="{
+    <button class="c-switch" :class="checked ? 'c-switch-checked' : ''" @click="switchHandel" :style="{
         'background-color': checked ? '#338eff' : '#00000040',
         transform:
             size === 'small'
@@ -30,14 +30,14 @@ const switchHandel = () => {
                     ? 'scale(1.3, 1.3)'
                     : 'scale(1, 1)',
     }">
-        <div class="ds-switch-hendel"></div>
-        <span class="ds-switch-text" :class="checked ? 'ds-switch-text-checked' : 'ds-switch-text-unchecked'"
+        <div class="c-switch-hendel"></div>
+        <span class="c-switch-text" :class="checked ? 'c-switch-text-checked' : 'c-switch-text-unchecked'"
             v-if="checkedText && uncheckedText">{{ checked ? checkedText : uncheckedText }}</span>
     </button>
 </template>
 
 <style scoped lang='css'>
-.ds-switch {
+.c-switch {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -57,7 +57,7 @@ const switchHandel = () => {
     margin-right: rem(5px);
 }
 
-.ds-switch-hendel {
+.c-switch-hendel {
     position: absolute;
     top: rem(2px);
     left: rem(2px);
@@ -68,23 +68,23 @@ const switchHandel = () => {
     transition: all 0.2s ease-in-out;
 }
 
-.ds-switch-checked .ds-switch-hendel {
+.c-switch-checked .c-switch-hendel {
     left: calc(100% - rem(20px));
 }
 
-.ds-switch-text {
+.c-switch-text {
     color: #fff;
     font-size: rem(12px);
     /* position: absolute; */
     font-weight: 600;
 }
 
-.ds-switch-text-checked {
+.c-switch-text-checked {
     left: rem(7px);
     padding-right: rem(18px);
 }
 
-.ds-switch-text-unchecked {
+.c-switch-text-unchecked {
     right: rem(7px);
     padding-left: rem(18px);
 }
