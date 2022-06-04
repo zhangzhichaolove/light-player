@@ -28,6 +28,11 @@ const routes: Array<RouteRecordRaw> = [
                 name: 'Switch 开关',
                 component: () => import('@/packages/switch/doc/doc.md')
             },
+            {
+                path: 'player',
+                name: 'Player 播放器',
+                component: () => import('@/packages/player/doc/doc.md')
+            },
         ]
     },
     {

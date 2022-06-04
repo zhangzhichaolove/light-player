@@ -19,4 +19,4 @@ import Preview from '@/components/Preview.vue'
 </div>
 
 <br/>
-<Preview comp-name="Button" demo-name="demo1"/>
+<Preview comp-name="button" demo-name="demo1"/>
