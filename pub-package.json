@@ -1,12 +1,15 @@
 {
     "name": "light-player-vb",
-    "version": "0.0.33",
+    "version": "0.0.42",
     "description": "一款轻量web播放器,基于vue3.2的组件库。",
     "main": "light-player.umd.js",
     "module": "light-player.es.js",
-    "types": "index.d.ts",
-    "typings": "index.d.ts",
-    "files": ["*", "types/*.d.ts", "dist/*.js"],
+    "types": "packages/index.d.ts",
+    "typings": "packages/index.d.ts",
+    "files": ["*"],
+    "dependencies": {
+        "vue": "^3.2.25"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/zhangzhichaolove/light-player"

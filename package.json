@@ -1,10 +1,11 @@
 {
   "name": "light-player-vb",
   "private": false,
-  "version": "0.0.37",
+  "version": "0.0.42",
   "main": "./dist/light-player.umd.js",
   "module": "./dist/light-player.es.js",
   "typings": "./dist/packages/index.d.ts",
+  "description": "一款轻量web播放器,基于vue3.2的组件库。",
   "files": [
     "dist/*"
   ],
@@ -41,5 +42,31 @@
     "vite": "^2.9.9",
     "vite-plugin-dts": "^1.2.0",
     "vue-tsc": "^0.34.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangzhichaolove/light-player"
+  },
+  "author": {
+    "name": "peakchao",
+    "email": "admin@peakchao.com",
+    "url": "peakchao.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangzhichaolove/light-player/issues",
+    "email": "admin@peakchao.com"
+  },
+  "homepage": "https://github.com/zhangzhichaolove/light-player#readme",
+  "keywords": [
+    "vue3",
+    "vue",
+    "light-play",
+    "vue3-light-play",
+    "vue video player",
+    "vue3 video player",
+    "video player",
+    "vue player",
+    "vue video"
+  ]
 }
