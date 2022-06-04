@@ -23,7 +23,11 @@
     "declarationDir": "dist/lib", // 类型声明文件的输出目录
     "types": [
       "vite/client",
-    ]
+    ],
+    // "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   // 排除编译入口文件 , "src/env.d.ts"
