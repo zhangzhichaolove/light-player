@@ -1,16 +1,19 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
+import Markdown from "vite-plugin-md";
 import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), dts()],
+  plugins: [vue({
+    include: [/\.vue$/, /\.md$/],
+  }),
+  Markdown(),
+  dts()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      components: resolve(__dirname, 'src/components'),
-      utils: resolve(__dirname, 'src/utils'),
+      '@': resolve(__dirname, 'src')
     }
   },
   build: {
