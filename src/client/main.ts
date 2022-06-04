@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import CUI from './packages/index'
-import router from './router/index'
+import ui from '../packages/index'
+import router from '../router/index'
 import hljs from "highlight.js";
 import "@/styles/code.css";
 hljs.configure({
@@ -31,5 +31,5 @@ app.directive("highlight", el => {
     });
 });
 app.use(router)
-app.use(CUI)
+app.use(ui)
 app.mount('#app')

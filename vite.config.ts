@@ -18,7 +18,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/packages/index.ts'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'light-player',
       // fileName: (format) => `build.${format}.ts`
       fileName: (format) => `light-player.${format}.js`
