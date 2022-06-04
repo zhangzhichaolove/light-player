@@ -43,45 +43,49 @@ const switchHandel = () => {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    min-width: 44px;
-    height: 22px;
-    line-height: 22px;
-    border-radius: 100px;
-    font-size: 14px;
+    min-width: rem(44px);
+    height: rem(22px);
+    line-height: rem(22px);
+    border-radius: rem(100px);
+    font-size: rem(14px);
     vertical-align: middle;
     border: 0;
     cursor: pointer;
-    box-shadow: 0 0 0 2px #00000020;
+    box-shadow: rem(0 0 0 2px #00000020);
     overflow: hidden;
+    margin-left: rem(5px);
+    margin-right: rem(5px);
 }
 
 .ds-switch-hendel {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 18px;
-    height: 18px;
+    top: rem(2px);
+    left: rem(2px);
+    width: rem(18px);
+    height: rem(18px);
     border-radius: 50%;
     background-color: #fff;
     transition: all 0.2s ease-in-out;
 }
 
 .ds-switch-checked .ds-switch-hendel {
-    left: calc(100% - 20px);
+    left: calc(100% - rem(20px));
 }
 
 .ds-switch-text {
     color: #fff;
-    font-size: 12px;
-    position: absolute;
+    font-size: rem(12px);
+    /* position: absolute; */
     font-weight: 600;
 }
 
 .ds-switch-text-checked {
-    left: 7px;
+    left: rem(7px);
+    padding-right: rem(18px);
 }
 
 .ds-switch-text-unchecked {
-    right: 7px;
+    right: rem(7px);
+    padding-left: rem(18px);
 }
 </style>
