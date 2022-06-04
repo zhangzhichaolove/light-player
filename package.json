@@ -1,10 +1,12 @@
 {
-  "name": "light-player",
+  "name": "light-player-vb",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.37",
+  "main": "./dist/light-player.umd.js",
+  "module": "./dist/light-player.es.js",
+  "typings": "./dist/packages/index.d.ts",
   "files": [
-    "package.json",
-    "dist"
+    "dist/*"
   ],
   "sideEffects": false,
   "exports": {
