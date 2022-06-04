@@ -38,6 +38,7 @@
   "devDependencies": {
     "@types/node": "^17.0.38",
     "@vitejs/plugin-vue": "^2.3.3",
+    "postcss-mixins": "^9.0.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vite-plugin-dts": "^1.2.0",

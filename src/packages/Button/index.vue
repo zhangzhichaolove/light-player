@@ -23,7 +23,9 @@ const bClass = computed(() => {
 </template>
 
 <style scoped lang='css'>
+@import "@/styles/base/inset.css";
 .ds-button {
+    @mixin inset-button;
     padding: 3px 12px;
     border-radius: 5px;
     border: 1px solid #ff00ff;

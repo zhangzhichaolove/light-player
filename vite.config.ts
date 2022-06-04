@@ -3,6 +3,7 @@ import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
 import Markdown from "vite-plugin-md";
 import dts from 'vite-plugin-dts'
+import postcssMixins from 'postcss-mixins'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,6 +33,11 @@ export default defineConfig({
           vue: 'Vue'
         }
       }
+    }
+  },
+  css: {
+    postcss: {
+      plugins: [postcssMixins]
     }
   },
   server: {

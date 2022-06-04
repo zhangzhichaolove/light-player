@@ -3,7 +3,6 @@ import App from './App.vue'
 // import ui from '@/packages/index'
 import router from '@/router/index'
 import hljs from "highlight.js";
-import "@/styles/code.css";
 import { installUi } from '..';
 hljs.configure({
     ignoreUnescapedHTML: true,
