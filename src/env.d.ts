@@ -12,3 +12,11 @@ declare module '*.md' {
   const Component: ComponentOptions
   export default Component
 }
+
+// 自定义类型约束
+declare type CButtonPropsKey = "color" | "bg";
+declare type CButtonPropsType = "default" | "warn" | "success";
+declare interface CButtonElement {
+  setType: (value: CButtonPropsType) => void
+  setProperty: (key: CButtonPropsKey, value: any) => void
+}

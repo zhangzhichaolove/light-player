@@ -20,8 +20,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && npm run type",
     "preview": "vite preview",
+    "type": "node src/scripts/buildType.js ",
     "pub": "npm run build && cp pub-package.json dist/package.json && cd dist && npm publish",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

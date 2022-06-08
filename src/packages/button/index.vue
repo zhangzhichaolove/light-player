@@ -2,18 +2,33 @@
 import { computed } from "vue";
 
 const props = withDefaults(defineProps<{
-    type?: "default" | "success";
+    type?: CButtonPropsType;
 }>(), {
     type: "default",
 });
 
-const emits = defineEmits(["click"]);
+const emits = defineEmits(["click", "update:type"]);
 
 const click = () => {
     emits("click");
 };
 const bClass = computed(() => {
+    console.log('---->', props.type);
     return ['c-button', `c-button-${props.type}`]
+})
+
+//类型定义
+const setType: CButtonElement['setType'] = (value: CButtonPropsType) => {
+    emits('update:type', value)
+    console.log('setType', value);
+}
+const setProperty: CButtonElement['setProperty'] = (key: CButtonPropsKey, value: any) => {
+    console.log('setProperty');
+}
+
+defineExpose({
+    setType,
+    setProperty
 })
 </script>
 <template>
@@ -34,8 +49,13 @@ const bClass = computed(() => {
     border: rem(1px solid #ff00ff);
 }
 
+
 .c-button-default {
     background-color: #00ff00;
+}
+
+.c-button-warn {
+    background-color: #ff00ff;
 }
 
 .c-button-success {
