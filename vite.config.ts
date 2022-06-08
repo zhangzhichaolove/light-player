@@ -5,6 +5,7 @@ import Markdown from "vite-plugin-md";
 import dts from 'vite-plugin-dts'
 import postcssMixins from 'postcss-mixins'
 import postcssRem from 'postcss-rem'
+import Delete from 'rollup-plugin-delete'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -38,7 +39,11 @@ export default defineConfig({
         globals: {
           vue: 'Vue'
         }
-      }
+      },
+      plugins: [Delete({
+        targets: ["dist/*.{ico,txt}"],
+        hook: 'generateBundle'
+      })]
     }
   },
   css: {
