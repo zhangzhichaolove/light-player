@@ -34,14 +34,12 @@ const videoRef = ref();
 const loadstart = (e: any) => {
     console.log('提示视频的元数据已加载')
     console.log(e)
-    console.log(video.duration)            // NaN
 }
 
 // 2、durationchange：时长变化。当指定的音频/视频的时长数据发生变化时触发，加载后，时长由 NaN 变为音频/视频的实际时长
 const durationchange = (e: any) => {
     console.log('提示视频的时长已改变')
     console.log(e)
-    console.log(video.duration)// 528.981333   视频的实际时长（单位：秒）
 }
 
 // 3、loadedmetadata ：元数据加载。当指定的音频/视频的元数据已加载时触发，元数据包括：时长、尺寸（仅视频）以及文本轨道
@@ -214,7 +212,7 @@ const onPlay = () => {
                             fill="#e6e6e6"></path>
                     </svg>
                     <span class="control-text control-text-top">{{ timeFormat(options.currentTime) }}/{{
-                            timeFormat(options.duration)
+                    timeFormat(options.duration)
                     }}</span>
                 </div>
                 <div class="icon-groups">

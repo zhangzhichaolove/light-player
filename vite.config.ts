@@ -12,7 +12,11 @@ export default defineConfig({
     include: [/\.vue$/, /\.md$/],
   }),
   Markdown(),
-  dts()],
+  dts({
+    outputDir: "dist",
+    staticImport: true,
+    insertTypesEntry: true
+  })],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')

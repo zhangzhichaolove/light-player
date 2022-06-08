@@ -3,7 +3,7 @@ import App from './App.vue'
 // import ui from '@/packages/index'
 import router from '@/router/index'
 import hljs from "highlight.js";
-import { installUi } from '..';
+import LightPlayer from '..';
 hljs.configure({
     ignoreUnescapedHTML: true,
     languages: [
@@ -31,5 +31,5 @@ app.directive("highlight", el => {
     });
 });
 app.use(router)
-app.use(installUi)
+app.use(LightPlayer)
 app.mount('#app')

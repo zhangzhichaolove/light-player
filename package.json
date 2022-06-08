@@ -1,13 +1,14 @@
 {
   "name": "light-player-vb",
   "private": false,
-  "version": "0.0.42",
-  "main": "./dist/light-player.umd.js",
-  "module": "./dist/light-player.es.js",
-  "typings": "./dist/packages/index.d.ts",
+  "version": "0.0.45",
+  "main": "dist/light-player.umd.js",
+  "module": "dist/light-player.es.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "description": "一款轻量web播放器,基于vue3.2的组件库。",
   "files": [
-    "dist/*"
+    "dist"
   ],
   "sideEffects": false,
   "exports": {
@@ -15,10 +16,7 @@
       "import": "./dist/light-player.es.js",
       "require": "./dist/light-player.umd.js"
     },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
