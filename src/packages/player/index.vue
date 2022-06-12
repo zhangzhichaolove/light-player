@@ -78,6 +78,7 @@ const canplaythrough = function (e: any) {
 
 // 8、play：播放监听
 const play = function (e: any) {
+    options.playState = 'play'
     console.log('提示该视频正在播放中')
     console.log(e)
 }
